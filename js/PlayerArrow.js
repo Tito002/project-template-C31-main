@@ -38,14 +38,15 @@ class PlayerArrow {
          código para adicionar a posição 
          atual da flecha a 
         matriz trajectory (trajetória)**/
-      
+        this.trajectory.push(position);
       }
   
 
       /****escreva um código correto para adicionar o loop for e exibir pequenos pontos
            em todas as posições armazenadas na matriz trajectory (trajetória)
            *******/
-     
-  
+     for (var i = 0; i < this.trajectory.length; i++) {
+     fill("black")
+     ellipse(this.trajectory[i][0], this.trajectory[i][1], 5, 5);
   }
 }
